@@ -12,4 +12,4 @@ class Employee < ApplicationRecord
   def titleize_employee
     self.name = self.name.titleize
   end
-  end
+end
