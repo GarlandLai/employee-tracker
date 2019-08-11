@@ -9,9 +9,9 @@ describe Employee do
 end
 
 
-describe Employee do
-  it("titleizes the name of an employee") do
-    employee = Employee.create({name: "giant steps", position: "jazz"})
-    expect(employee.name()).to(eq("Giant Steps"))
-  end
-end
+# describe Employee do
+#   it("titleizes the name of an employee") do
+#     employee = Employee.create({name: "giant steps", position: "jazz"})
+#     expect(employee.name()).to(eq("Giant Steps"))
+#   end
+# end

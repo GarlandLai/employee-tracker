@@ -1,5 +1,10 @@
 class SessionsController < ApplicationController
 
+  before_action :authorize, only: [:secret]
+
+  def secret
+  end
+
   def create
     @user = User.authenticate(params[:email], params[:password])
     if @user
