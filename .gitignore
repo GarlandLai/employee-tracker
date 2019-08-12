@@ -25,3 +25,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/.env
+
+response = RestClient::Request.execute(method: :get,url: 'https://api.nytimes.com/svc/books/v3/lists/combined-print-and-e-book-fiction.json?api-key=ENV['NYT_API_KEY'])
